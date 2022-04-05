@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng Cửu Chương</title>
+    <style>
+        .bang-cc,
+        tr,
+        td {
+            border: 1px solid;
+
+        }
+
+        .bang-cc {
+            text-align: center;
+            background-color: aqua;
+            color: rgb(15, 33, 134)
+        }
+    </style>
+</head>
+
+<body>
+    <table class="bang-cc" id="bang" width="100%"></table>
+    <script>
+        let table = "<tr>";
+        for (let row = 1; row <= 9; row++) {
+            for (let col = 2; col <= 9; col++) {
+                table += "<td>" + col + "x" + row + "=" + (row * col) + "</td>"
+            }
+            table += "</tr><tr>"
+        }
+        table += "</tr>";
+        document.getElementById("bang").innerHTML = table;
+    </script>
+</body>
+
+</html>

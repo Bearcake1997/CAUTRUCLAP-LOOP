@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let one = Number(prompt("Nhập số đầu tiên: "));
+        let two = Number(prompt("Nhập số cuối cùng: "));
+        let a, b, sum = 0;
+        if (one >= two) {
+            a = two;
+            b = one;
+        } else {
+            a = one;
+            b = two;
+        }
+        for (let i = a + 1; i < b; i++) {
+            sum += i;
+        }
+        alert('Tổng các số nguyên từ a đến b là: ' + sum);
+    </script>
+</body>
+
+</html>

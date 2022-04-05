@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let after = 0, before =1,
+        maxNum = parseInt(prompt('Nhập số bạn muốn hiển thị trong dãy Fibonacci'));
+        for (let i = 1; i < maxNum; i ++) {
+            if (after == 0) {
+                document.write(after, "<br/>");
+                document.write(before, "<br/>");
+            } else {
+                document.write(last, "<br/>");
+            }
+            last = before + after;
+            after = before;
+            before = last;
+        }
+        // function Fibonacci(num) {
+        //     var before = 0;
+        //     var actual = 1;
+        //     var next = 1;
+        //     var maxN = parseInt(prompt('Nhập số bạn muốn hiển thị trong dãy Fibonacci: '));
+        //     for (let i = 0; i < num; i++) {
+        //         console.log("--------------------------------");
+        //         console.log("fibonaci: (next)" + next)
+        //         before = actual + next;
+        //         console.log("before: (actual + next) =" + before)
+        //         actual = next
+        //         console.log("actual: actual = next =" + actual)
+        //         next = before
+        //         console.log("next: next = before =" + next)
+        //     }
+        //}
+
+        //Fibonacci(10);
+    </script>
+</body>
+
+</html>
